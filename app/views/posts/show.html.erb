@@ -1,0 +1,18 @@
+<p>
+  <b>Title:</b>
+  <%= @post.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @post.content %>
+</p>
+
+<p>
+  <b>Permalink:</b>
+  <%= @post.permalink %>
+</p>
+
+
+<%= raw permalink_edit_link 'Edit', @post %> |
+<%= link_to 'Back', posts_path %>
