@@ -1,11 +1,11 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  title: MyString
-  content: MyText
-  permalink: MyString
+  title: hello world
+  content: hello content
+  permalink: hello-world
 
 two:
-  title: MyString
-  content: MyText
-  permalink: MyString
+  title: post two
+  content: second content
+  permalink: post-two

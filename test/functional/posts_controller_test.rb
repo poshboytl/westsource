@@ -17,22 +17,22 @@ class PostsControllerTest < ActionController::TestCase
       post :create, :post => posts(:one).attributes
     end
 
-    assert_redirected_to post_path(assigns(:post))
+    assert_redirected_to "/posts/#{posts(:one).permalink}"
   end
 
   test "should show post" do
-    get :show, :id => posts(:one).to_param
+    get :show, :id => posts(:one).permalink.to_param
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, :id => posts(:one).to_param
+    get :edit, :id => posts(:one).permalink.to_param
     assert_response :success
   end
 
   test "should update post" do
     put :update, :id => posts(:one).to_param, :post => posts(:one).attributes
-    assert_redirected_to post_path(assigns(:post))
+    assert_redirected_to "/posts/#{posts(:one).permalink}"
   end
 
   test "should destroy post" do
